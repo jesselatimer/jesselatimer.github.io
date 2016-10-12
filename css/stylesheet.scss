@@ -1,0 +1,104 @@
+@import 'normalize';
+@import 'mixins';
+@import 'animations';
+
+$background: white;
+
+body {
+  @include fadeIn(2s);
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5vh;
+
+    h1 {
+      font-size: 6vh;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+
+      span.job-title {
+        font-weight: 200;
+        display: block;
+        @media (min-width: 900px) {
+          & {
+            display: inline;
+            &:before { content: " | "; }
+          }
+        }
+      }
+    }
+
+    aside.external-links-wrapper {
+      ul.external-links-list {
+        @include nav-list;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          padding: 0 15px;
+          &:first-of-type { padding-left: 0; }
+          &:last-of-type { padding-right: 0; }
+
+          a {
+            display: block;
+            height: 8vh;
+            width: 8vh;
+
+            svg {
+              height: 100%;
+              width: 100%;
+              transition: transform .5s;
+
+              &:hover {
+                border-radius: 100%;
+                fill: $background;
+                transform: rotate(25deg);
+              }
+            }
+          }
+          &.external-link-github   svg { fill: rgb(30,215,124); &:hover { background: rgb(30,215,124); }}
+          &.external-link-linkedin svg { fill: rgb(26,122,211); &:hover { background: rgb(26,122,211); }}
+          &.external-link-email    svg { fill: red; &:hover { background: red; }}
+        }
+      }
+    }
+  }
+  nav {
+      width: 100%;
+      border-top: 2px black solid;
+
+      ul.nav-list {
+        @include nav-list;
+        display: flex;
+        justify-content: center;
+
+        li {
+          margin: 0 40px;
+          padding: 15px;
+
+          &:hover {
+            cursor: pointer;
+            background: purple;
+          }
+        }
+      }
+    }
+
+  main {
+    section.content {
+      border: 1px gray solid;
+
+      &.hidden { display: none; }
+      &.about-content { color: red; }
+      &.projects-content { color: blue; }
+      &.resume-content { color: green; }
+    }
+  }
+
+  p {
+    font-family: 'Noto Serif', serif;
+  }
+}
