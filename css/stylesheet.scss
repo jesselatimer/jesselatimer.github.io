@@ -5,14 +5,15 @@
 /* TODO: Be sure to add prefixes. */
 
 /* Document Variables */
-$background: white;
-$main-background: url("../images/footer-lodyas.png");
+$background: url("../images/footer-lodyas.png");
+$header-background: white;
 $title-size: 6vh;
 
 /* Breakpoints */
 
 /* Application */
 body {
+  background: $background;
   @include fadeIn(2s);
 
   header {
@@ -21,6 +22,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     padding: 5vh;
+    background: $header-background;
 
     h1 {
       font-size: $title-size;
@@ -62,7 +64,7 @@ body {
 
               &:hover {
                 border-radius: 100%;
-                fill: $background;
+                fill: $header-background;
                 transform: rotate(25deg);
               }
             }
@@ -75,6 +77,7 @@ body {
     }
   }
   nav {
+      // background: $header-background;
       width: 100%;
       border-top: 2px black solid;
 
@@ -84,12 +87,13 @@ body {
         justify-content: center;
 
         li {
+          color: #ccc;
           margin: 0 40px;
           padding: 15px;
 
           &.selected {
-            background: $main-background;
             color: white;
+            border-bottom: 2px solid white;
           }
 
           &:hover {
@@ -101,19 +105,25 @@ body {
     }
 
   main {
-    background: $main-background;
+    // background: $main-background;
     padding: 30px;
 
     section.content {
       background: rgba(81,81,81,0.7);
       border: 5px rgba(38,38,38,0.7) solid;
       padding: 20px;
+      color: #eee;
 
       &.hidden { display: none; }
-      &.about-content { color: red; }
-      &.projects-content { color: blue; }
-      &.resume-content { color: green; }
+      // &.about-content { color: red; }
+      // &.projects-content { color: blue; }
+      // &.resume-content { color: green; }
     }
+  }
+  footer {
+    color: #ccc;
+    text-align: center;
+    font-size: smaller;
   }
 
   p {

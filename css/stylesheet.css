@@ -432,6 +432,7 @@ template {
 /* Breakpoints */
 /* Application */
 body {
+  background: url("../images/footer-lodyas.png");
   -moz-animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   -o-animation: fadeIn 2s;
@@ -442,7 +443,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 5vh; }
+    padding: 5vh;
+    background: white; }
     body header h1 {
       font-size: 6vh;
       font-family: 'Raleway', sans-serif;
@@ -501,28 +503,27 @@ body {
       display: flex;
       justify-content: center; }
       body nav ul.nav-list li {
+        color: #ccc;
         margin: 0 40px;
         padding: 15px; }
         body nav ul.nav-list li.selected {
-          background: url("../images/footer-lodyas.png");
-          color: white; }
+          color: white;
+          border-bottom: 2px solid white; }
         body nav ul.nav-list li:hover {
           cursor: pointer; }
   body main {
-    background: url("../images/footer-lodyas.png");
     padding: 30px; }
     body main section.content {
       background: rgba(81, 81, 81, 0.7);
       border: 5px rgba(38, 38, 38, 0.7) solid;
-      padding: 20px; }
+      padding: 20px;
+      color: #eee; }
       body main section.content.hidden {
         display: none; }
-      body main section.content.about-content {
-        color: red; }
-      body main section.content.projects-content {
-        color: blue; }
-      body main section.content.resume-content {
-        color: green; }
+  body footer {
+    color: #ccc;
+    text-align: center;
+    font-size: smaller; }
   body p {
     font-family: 'Noto Serif', serif; }
 
