@@ -427,6 +427,10 @@ template {
     opacity: 0; }
   100% {
     opacity: 1; } }
+/* TODO: Be sure to add prefixes. */
+/* Document Variables */
+/* Breakpoints */
+/* Application */
 body {
   -moz-animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
