@@ -503,19 +503,26 @@ body {
       body nav ul.nav-list li {
         margin: 0 40px;
         padding: 15px; }
+        body nav ul.nav-list li.selected {
+          background: url("../images/footer-lodyas.png");
+          color: white; }
         body nav ul.nav-list li:hover {
-          cursor: pointer;
-          background: purple; }
-  body main section.content {
-    border: 1px gray solid; }
-    body main section.content.hidden {
-      display: none; }
-    body main section.content.about-content {
-      color: red; }
-    body main section.content.projects-content {
-      color: blue; }
-    body main section.content.resume-content {
-      color: green; }
+          cursor: pointer; }
+  body main {
+    background: url("../images/footer-lodyas.png");
+    padding: 30px; }
+    body main section.content {
+      background: rgba(81, 81, 81, 0.7);
+      border: 5px rgba(38, 38, 38, 0.7) solid;
+      padding: 20px; }
+      body main section.content.hidden {
+        display: none; }
+      body main section.content.about-content {
+        color: red; }
+      body main section.content.projects-content {
+        color: blue; }
+      body main section.content.resume-content {
+        color: green; }
   body p {
     font-family: 'Noto Serif', serif; }
 

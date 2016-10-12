@@ -6,6 +6,7 @@
 
 /* Document Variables */
 $background: white;
+$main-background: url("../images/footer-lodyas.png");
 $title-size: 6vh;
 
 /* Breakpoints */
@@ -86,17 +87,27 @@ body {
           margin: 0 40px;
           padding: 15px;
 
+          &.selected {
+            background: $main-background;
+            color: white;
+          }
+
           &:hover {
             cursor: pointer;
-            background: purple;
+
           }
         }
       }
     }
 
   main {
+    background: $main-background;
+    padding: 30px;
+
     section.content {
-      border: 1px gray solid;
+      background: rgba(81,81,81,0.7);
+      border: 5px rgba(38,38,38,0.7) solid;
+      padding: 20px;
 
       &.hidden { display: none; }
       &.about-content { color: red; }
