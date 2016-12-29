@@ -1,3 +1,4 @@
+/* To transpile, run `sass --watch css/` from root. */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -432,12 +433,16 @@ template {
 /* Breakpoints */
 /* Application */
 body {
-  background: url("../images/footer-lodyas.png");
+  background: url("../images/footer-lodyas.png") #282828;
   -moz-animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   -o-animation: fadeIn 2s;
   -ms-animation: fadeIn 2s;
   animation: fadeIn 2s; }
+  body .group:after {
+    content: "";
+    display: table;
+    clear: both; }
   body header {
     display: flex;
     flex-wrap: wrap;
@@ -447,7 +452,7 @@ body {
     background: white; }
     body header h1 {
       font-size: 6vh;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
       text-transform: uppercase; }
       body header h1 span.job-title {
         font-weight: 200;
@@ -482,9 +487,9 @@ body {
               fill: white;
               transform: rotate(25deg); }
         body header aside.external-links-wrapper ul.external-links-list li.external-link-github svg {
-          fill: #1ed77c; }
+          fill: #2b6711; }
           body header aside.external-links-wrapper ul.external-links-list li.external-link-github svg:hover {
-            background: #1ed77c; }
+            background: #2b6711; }
         body header aside.external-links-wrapper ul.external-links-list li.external-link-linkedin svg {
           fill: #1a7ad3; }
           body header aside.external-links-wrapper ul.external-links-list li.external-link-linkedin svg:hover {
@@ -505,26 +510,43 @@ body {
       body nav ul.nav-list li {
         color: #ccc;
         margin: 0 40px;
-        padding: 15px; }
+        padding: 15px;
+        transition: color .5s;
+        font-size: 1.1em; }
         body nav ul.nav-list li.selected {
           color: white;
           border-bottom: 2px solid white; }
         body nav ul.nav-list li:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          color: white; }
   body main {
     padding: 30px; }
     body main section.content {
       background: rgba(81, 81, 81, 0.7);
       border: 5px rgba(38, 38, 38, 0.7) solid;
       padding: 20px;
-      color: #eee; }
+      color: #eee;
+      font-family: "Noto Serif", serif;
+      font-size: 16px; }
+      body main section.content a {
+        color: #409a19;
+        text-decoration: none; }
+        body main section.content a:hover {
+          text-decoration: underline; }
+      body main section.content #headshot {
+        height: 50vh;
+        border-radius: 200px;
+        background: #ccc;
+        padding: 2px;
+        box-shadow: 0 0 50px rgba(38, 38, 38, 0.7);
+        float: left;
+        margin: 10px 40px; }
       body main section.content.hidden {
         display: none; }
   body footer {
     color: #ccc;
     text-align: center;
-    font-size: smaller; }
-  body p {
-    font-family: 'Noto Serif', serif; }
+    font-size: smaller;
+    margin-bottom: 15px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

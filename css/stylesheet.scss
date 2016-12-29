@@ -1,3 +1,5 @@
+/* To transpile, run `sass --watch css/` from root. */
+
 @import 'normalize';
 @import 'mixins';
 @import 'animations';
@@ -5,9 +7,11 @@
 /* TODO: Be sure to add prefixes. */
 
 /* Document Variables */
-$background: url("../images/footer-lodyas.png");
+$background: url("../images/footer-lodyas.png") rgb(40,40,40);
 $header-background: white;
 $title-size: 6vh;
+$body-font: 'Noto Serif', serif;
+$header-font: 'Raleway', sans-serif;
 
 /* Breakpoints */
 
@@ -15,6 +19,8 @@ $title-size: 6vh;
 body {
   background: $background;
   @include fadeIn(2s);
+
+  .group:after { @include clearfix; }
 
   header {
     display: flex;
@@ -26,7 +32,7 @@ body {
 
     h1 {
       font-size: $title-size;
-      font-family: 'Raleway', sans-serif;
+      font-family: $header-font;
       text-transform: uppercase;
 
       span.job-title {
@@ -69,7 +75,7 @@ body {
               }
             }
           }
-          &.external-link-github   svg { fill: rgb(30,215,124); &:hover { background: rgb(30,215,124); }}
+          &.external-link-github   svg { fill: rgb(43,103,17); &:hover { background: rgb(43,103,17); }}
           &.external-link-linkedin svg { fill: rgb(26,122,211); &:hover { background: rgb(26,122,211); }}
           &.external-link-email    svg { fill: red; &:hover { background: red; }}
         }
@@ -90,6 +96,8 @@ body {
           color: #ccc;
           margin: 0 40px;
           padding: 15px;
+          transition: color .5s;
+          font-size: 1.1em;
 
           &.selected {
             color: white;
@@ -98,14 +106,13 @@ body {
 
           &:hover {
             cursor: pointer;
-
+            color: white;
           }
         }
       }
     }
 
   main {
-    // background: $main-background;
     padding: 30px;
 
     section.content {
@@ -113,20 +120,33 @@ body {
       border: 5px rgba(38,38,38,0.7) solid;
       padding: 20px;
       color: #eee;
+      font-family: $body-font;
+      font-size: 16px;
+
+      a {
+        color: rgb(64,154,25);
+        text-decoration: none;
+
+        &:hover { text-decoration: underline; }
+      }
+
+      #headshot {
+        height: 50vh;
+        border-radius: 200px;
+        background: #ccc;
+        padding: 2px;
+        box-shadow: 0 0 50px rgba(38, 38, 38, 0.7);
+        float: left;
+        margin: 10px 40px;
+      }
 
       &.hidden { display: none; }
-      // &.about-content { color: red; }
-      // &.projects-content { color: blue; }
-      // &.resume-content { color: green; }
     }
   }
   footer {
     color: #ccc;
     text-align: center;
     font-size: smaller;
-  }
-
-  p {
-    font-family: 'Noto Serif', serif;
+    margin-bottom: 15px;
   }
 }
