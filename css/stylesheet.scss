@@ -135,13 +135,35 @@ body {
       &#about {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;
+
+        @media (min-width: 600px) {
+          & {
+            flex-wrap: nowrap;
+          }
+        }
 
         #headshot {
-          height: 50vh;
+          height: auto;
+          width: 80%;
+          margin: auto;
           border-radius: 200px;
           border: 2px #ccc solid;
           box-shadow: 0 0 50px rgba(38, 38, 38, 0.7);
-          margin: 10px 40px;
+
+          @media (min-width: 600px) {
+            & {
+              width: auto;
+              height: 50vh;
+              margin: 10px 40px;
+            }
+          }
+        }
+
+        #about-content {
+          // flex-basis: 50%;
         }
 
         li.punch {
@@ -197,5 +219,6 @@ body {
     text-align: center;
     font-size: smaller;
     margin-bottom: 15px;
+    padding: 0 25px;
   }
 }
