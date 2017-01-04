@@ -10,7 +10,7 @@
 $background: url("../images/footer-lodyas.png") rgb(40,40,40);
 $header-background: white;
 $title-size: 6vh;
-$body-font: 'Noto Serif', serif;
+$body-font: 'Noto Sans', sans-serif;
 $header-font: 'Raleway', sans-serif;
 
 /* Breakpoints */
@@ -130,14 +130,63 @@ body {
         &:hover { text-decoration: underline; }
       }
 
-      #headshot {
-        height: 50vh;
-        border-radius: 200px;
-        background: #ccc;
-        padding: 2px;
-        box-shadow: 0 0 50px rgba(38, 38, 38, 0.7);
-        float: left;
-        margin: 10px 40px;
+      // h2 { font-family: }
+
+      &#about {
+        display: flex;
+        align-items: center;
+
+        #headshot {
+          height: 50vh;
+          border-radius: 200px;
+          border: 2px #ccc solid;
+          box-shadow: 0 0 50px rgba(38, 38, 38, 0.7);
+          margin: 10px 40px;
+        }
+
+        li.punch {
+          list-style-image: url("../images/punch-bullet.png");
+        }
+      }
+
+      &#projects {
+        text-align: center;
+
+        img {
+          width: 80%;
+          border: 2px #ccc solid;
+          margin: 30px;
+        }
+        .project {
+          .seperator {
+            color: #ccc;
+          }
+
+          .project-github, .project-link {
+            display: inline-block;
+            svg { fill: #ccc; }
+            &:hover svg { fill: #fff; }
+          }
+
+          .project-github {
+            height: 24px;
+            width: 24px;
+            vertical-align: bottom;
+          }
+
+          .project-link {
+            height: 18px;
+            width: 18px;
+          }
+
+          .description {
+            font-style: italic;
+          }
+        }
+      }
+
+      &#resume {
+        .pdfobject-container { height: 1180px; }
       }
 
       &.hidden { display: none; }

@@ -526,21 +526,49 @@ body {
       border: 5px rgba(38, 38, 38, 0.7) solid;
       padding: 20px;
       color: #eee;
-      font-family: "Noto Serif", serif;
+      font-family: "Noto Sans", sans-serif;
       font-size: 16px; }
       body main section.content a {
         color: #409a19;
         text-decoration: none; }
         body main section.content a:hover {
           text-decoration: underline; }
-      body main section.content #headshot {
-        height: 50vh;
-        border-radius: 200px;
-        background: #ccc;
-        padding: 2px;
-        box-shadow: 0 0 50px rgba(38, 38, 38, 0.7);
-        float: left;
-        margin: 10px 40px; }
+      body main section.content#about {
+        display: flex;
+        align-items: center; }
+        body main section.content#about #headshot {
+          height: 50vh;
+          border-radius: 200px;
+          border: 2px #ccc solid;
+          box-shadow: 0 0 50px rgba(38, 38, 38, 0.7);
+          margin: 10px 40px; }
+        body main section.content#about li.punch {
+          list-style-image: url("../images/punch-bullet.png"); }
+      body main section.content#projects {
+        text-align: center; }
+        body main section.content#projects img {
+          width: 80%;
+          border: 2px #ccc solid;
+          margin: 30px; }
+        body main section.content#projects .project .seperator {
+          color: #ccc; }
+        body main section.content#projects .project .project-github, body main section.content#projects .project .project-link {
+          display: inline-block; }
+          body main section.content#projects .project .project-github svg, body main section.content#projects .project .project-link svg {
+            fill: #ccc; }
+          body main section.content#projects .project .project-github:hover svg, body main section.content#projects .project .project-link:hover svg {
+            fill: #fff; }
+        body main section.content#projects .project .project-github {
+          height: 24px;
+          width: 24px;
+          vertical-align: bottom; }
+        body main section.content#projects .project .project-link {
+          height: 18px;
+          width: 18px; }
+        body main section.content#projects .project .description {
+          font-style: italic; }
+      body main section.content#resume .pdfobject-container {
+        height: 1180px; }
       body main section.content.hidden {
         display: none; }
   body footer {
