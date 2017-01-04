@@ -90,7 +90,14 @@ body {
       ul.nav-list {
         @include nav-list;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+
+        @media (min-width: 600px) {
+          & {
+            flex-wrap: nowrap;;
+          }
+        }
 
         li {
           color: #ccc;
@@ -98,6 +105,13 @@ body {
           padding: 15px;
           transition: color .5s;
           font-size: 1.1em;
+          width: 100%;
+
+          @media (min-width: 600px) {
+            & {
+              width: auto;
+            }
+          }
 
           &.selected {
             color: white;
@@ -156,8 +170,9 @@ body {
 
           @media (min-width: 600px) {
             & {
-              width: auto;
-              height: 50vmin;
+              width: 20%;
+              min-width: 150px;
+              height: auto;
               margin: 10px 40px;
             }
           }

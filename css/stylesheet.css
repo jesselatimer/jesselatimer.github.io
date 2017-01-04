@@ -506,13 +506,21 @@ body {
       padding: 0;
       margin: 0;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center; }
+      @media (min-width: 600px) {
+        body nav ul.nav-list {
+          flex-wrap: nowrap; } }
       body nav ul.nav-list li {
         color: #ccc;
         margin: 0 40px;
         padding: 15px;
         transition: color .5s;
-        font-size: 1.1em; }
+        font-size: 1.1em;
+        width: 100%; }
+        @media (min-width: 600px) {
+          body nav ul.nav-list li {
+            width: auto; } }
         body nav ul.nav-list li.selected {
           color: white;
           border-bottom: 2px solid white; }
@@ -551,8 +559,9 @@ body {
           box-shadow: 0 0 50px rgba(38, 38, 38, 0.7); }
           @media (min-width: 600px) {
             body main section.content#about #headshot {
-              width: auto;
-              height: 50vmin;
+              width: 20%;
+              min-width: 150px;
+              height: auto;
               margin: 10px 40px; } }
         body main section.content#about li.punch {
           list-style-image: url("../images/punch-bullet.png"); }
