@@ -527,7 +527,7 @@ body {
       padding: 20px;
       color: #eee;
       font-family: "Noto Sans", sans-serif;
-      font-size: 16px; }
+      font-size: 2.5vmin; }
       body main section.content a {
         color: #409a19;
         text-decoration: none; }
@@ -543,8 +543,8 @@ body {
           body main section.content#about {
             flex-wrap: nowrap; } }
         body main section.content#about #headshot {
-          height: auto;
           width: 80%;
+          height: auto;
           margin: auto;
           border-radius: 200px;
           border: 2px #ccc solid;
@@ -552,7 +552,7 @@ body {
           @media (min-width: 600px) {
             body main section.content#about #headshot {
               width: auto;
-              height: 50vh;
+              height: 50vmin;
               margin: 10px 40px; } }
         body main section.content#about li.punch {
           list-style-image: url("../images/punch-bullet.png"); }
