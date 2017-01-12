@@ -78,7 +78,7 @@ body {
               }
             }
           }
-          &.external-link-github   svg { fill: rgb(43,103,17); &:hover { background: rgb(43,103,17); }}
+          &.external-link-github   svg { fill: rgb(0,0,0); &:hover { background: rgb(0,0,0); }}
           &.external-link-linkedin svg { fill: rgb(26,122,211); &:hover { background: rgb(26,122,211); }}
           &.external-link-email    svg { fill: red; &:hover { background: red; }}
         }

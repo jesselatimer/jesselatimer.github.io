@@ -488,9 +488,9 @@ body {
               fill: white;
               transform: rotate(25deg); }
         body header aside.external-links-wrapper ul.external-links-list li.external-link-github svg {
-          fill: #2b6711; }
+          fill: black; }
           body header aside.external-links-wrapper ul.external-links-list li.external-link-github svg:hover {
-            background: #2b6711; }
+            background: black; }
         body header aside.external-links-wrapper ul.external-links-list li.external-link-linkedin svg {
           fill: #1a7ad3; }
           body header aside.external-links-wrapper ul.external-links-list li.external-link-linkedin svg:hover {
