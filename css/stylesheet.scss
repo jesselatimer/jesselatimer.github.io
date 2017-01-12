@@ -134,10 +134,21 @@ body {
 
     section.content {
       background: rgba(81,81,81,0.7);
-      border: 5px rgba(38,38,38,0.7) solid;
-      padding: 20px;
       color: #eee;
-      font-family: $body-font;
+      transition: opacity 0.5s;
+      overflow: hidden;
+      padding: 0px;
+      border: none;
+      max-height: 0;
+      opacity: 0;
+
+      &.selected {
+        border: 5px rgba(38,38,38,0.7) solid;
+        padding: 20px;
+        font-family: $body-font;
+        max-height: 9999px;
+        opacity: 1;
+      }
 
       a {
         color: $link-color;
@@ -197,7 +208,7 @@ body {
           margin: 30px;
         }
         .project {
-          .seperator {
+          .separator {
             color: #ccc;
           }
 

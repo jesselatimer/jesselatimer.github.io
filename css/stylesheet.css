@@ -532,10 +532,19 @@ body {
     padding: 30px; }
     body main section.content {
       background: rgba(81, 81, 81, 0.7);
-      border: 5px rgba(38, 38, 38, 0.7) solid;
-      padding: 20px;
       color: #eee;
-      font-family: "Noto Sans", sans-serif; }
+      transition: opacity 0.5s;
+      overflow: hidden;
+      padding: 0px;
+      border: none;
+      max-height: 0;
+      opacity: 0; }
+      body main section.content.selected {
+        border: 5px rgba(38, 38, 38, 0.7) solid;
+        padding: 20px;
+        font-family: "Noto Sans", sans-serif;
+        max-height: 9999px;
+        opacity: 1; }
       body main section.content a {
         color: tan;
         text-decoration: none; }
@@ -571,7 +580,7 @@ body {
           width: 80%;
           border: 2px #ccc solid;
           margin: 30px; }
-        body main section.content#projects .project .seperator {
+        body main section.content#projects .project .separator {
           color: #ccc; }
         body main section.content#projects .project .project-github, body main section.content#projects .project .project-link {
           display: inline-block; }

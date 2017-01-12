@@ -23,9 +23,9 @@
   var hideAllExcept = function(showEl, navEl) {
     sections.forEach(function(el) {
       if (el === showEl) {
-        el.setAttribute("style", "");
+        el.classList.add("selected");
       } else {
-        el.setAttribute("style", "display: none");
+        el.classList.remove("selected");
       }
     }, this);
     sectionsNav.forEach(function(el) {
