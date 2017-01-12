@@ -438,7 +438,8 @@ body {
   -webkit-animation: fadeIn 2s;
   -o-animation: fadeIn 2s;
   -ms-animation: fadeIn 2s;
-  animation: fadeIn 2s; }
+  animation: fadeIn 2s;
+  font-size: 16px; }
   body .group:after {
     content: "";
     display: table;
@@ -516,7 +517,7 @@ body {
         margin: 0 40px;
         padding: 15px;
         transition: color .5s;
-        font-size: 1.1em;
+        font-size: 1.2em;
         width: 100%; }
         @media (min-width: 600px) {
           body nav ul.nav-list li {
@@ -534,10 +535,9 @@ body {
       border: 5px rgba(38, 38, 38, 0.7) solid;
       padding: 20px;
       color: #eee;
-      font-family: "Noto Sans", sans-serif;
-      font-size: 2.5vmin; }
+      font-family: "Noto Sans", sans-serif; }
       body main section.content a {
-        color: #409a19;
+        color: tan;
         text-decoration: none; }
         body main section.content a:hover {
           text-decoration: underline; }
