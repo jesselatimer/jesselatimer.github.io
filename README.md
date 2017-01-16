@@ -1,3 +1,5 @@
-Personal Site for Jesse Latimer
+Personal Site for [Jesse Latimer](https://www.linkedin.com/in/jesselatimer).
 
-Built with HTML, SASS, JavaScript.
+[jlat.io](http://jlat.io)
+
+Built with HTML, SASS, and vanilla JavaScript.
