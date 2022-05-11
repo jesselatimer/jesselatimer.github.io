@@ -1,20 +1,16 @@
 (function() {
-  PDFObject.embed("pdf/jesse-latimer-resume.pdf", document.getElementById('resume-embed'));
+  // TODO: update resume
+  // PDFObject.embed("pdf/jesse-latimer-resume.pdf", document.getElementById('resume-embed'));
 
   var about = document.getElementById('about');
   var aboutNav = document.getElementById('nav-about');
-  var projects = document.getElementById('projects');
-  var projectsNav = document.getElementById('nav-projects');
   var resume = document.getElementById('resume');
   var resumeNav = document.getElementById('nav-resume');
-  var sections = [about, projects, resume];
-  var sectionsNav = [aboutNav, projectsNav, resumeNav];
+  var sections = [about, resume];
+  var sectionsNav = [aboutNav, resumeNav];
 
   aboutNav.addEventListener("click", function(nav) {
     hideAllExcept(about, nav.target);
-  }.bind(this));
-  projectsNav.addEventListener("click", function(nav) {
-    hideAllExcept(projects, nav.target);
   }.bind(this));
   resumeNav.addEventListener("click", function(nav) {
     hideAllExcept(resume, nav.target);

@@ -9,14 +9,15 @@
 /* Document
    ========================================================================== */
 html {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   /* 1 */
   line-height: 1.15;
   /* 2 */
   -ms-text-size-adjust: 100%;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  /* 3 */
+}
 
 /* Sections
    ========================================================================== */
@@ -24,7 +25,8 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /**
  * Add the correct display in IE 9-.
@@ -35,7 +37,8 @@ footer,
 header,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -43,7 +46,8 @@ section {
  */
 h1 {
   font-size: 2em;
-  margin: 0; }
+  margin: 0;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -55,13 +59,15 @@ figcaption,
 figure,
 main {
   /* 1 */
-  display: block; }
+  display: block;
+}
 
 /**
  * Add the correct margin in IE 8.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -73,7 +79,8 @@ hr {
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -83,7 +90,8 @@ pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -95,7 +103,8 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the outline on focused links when they are also active or hovered
@@ -103,7 +112,8 @@ a {
  */
 a:active,
 a:hover {
-  outline-width: 0; }
+  outline-width: 0;
+}
 
 /**
  * 1. Remove the bottom border in Firefox 39-.
@@ -115,21 +125,24 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   text-decoration: underline dotted;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 b,
 strong {
-  font-weight: inherit; }
+  font-weight: inherit;
+}
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -141,26 +154,30 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct font style in Android 4.3-.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Add the correct background and color in IE 9-.
  */
 mark {
   background-color: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -171,13 +188,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -186,26 +206,30 @@ sup {
  */
 audio,
 video {
-  display: inline-block; }
+  display: inline-block;
+}
 
 /**
  * Add the correct display in iOS 4-7.
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Remove the border on images inside links in IE 10-.
  */
 img {
-  border-style: none; }
+  border-style: none;
+}
 
 /**
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Forms
    ========================================================================== */
@@ -225,7 +249,8 @@ textarea {
   line-height: 1.15;
   /* 1 */
   margin: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Show the overflow in IE.
@@ -234,7 +259,8 @@ textarea {
 button,
 input {
   /* 1 */
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -243,7 +269,8 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -251,30 +278,33 @@ select {
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
+html [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
@@ -282,7 +312,8 @@ button:-moz-focusring,
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -302,7 +333,8 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */ }
+  /* 1 */
+}
 
 /**
  * 1. Add the correct display in IE 9-.
@@ -312,48 +344,54 @@ progress {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the default vertical scrollbar in IE.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -363,7 +401,8 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Interactive
    ========================================================================== */
@@ -373,13 +412,15 @@ textarea {
  */
 details,
 menu {
-  display: block; }
+  display: block;
+}
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-  display: list-item; }
+  display: list-item;
+}
 
 /* Scripting
    ========================================================================== */
@@ -387,13 +428,15 @@ summary {
  * Add the correct display in IE 9-.
  */
 canvas {
-  display: inline-block; }
+  display: inline-block;
+}
 
 /**
  * Add the correct display in IE.
  */
 template {
-  display: none; }
+  display: none;
+}
 
 /* Hidden
    ========================================================================== */
@@ -401,211 +444,248 @@ template {
  * Add the correct display in IE 10-.
  */
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @-webkit-keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @-o-keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @-ms-keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
-/* TODO: Be sure to add prefixes. */
+    opacity: 1;
+  }
+}
 /* Document Variables */
 /* Breakpoints */
 /* Application */
 body {
-  background: url("../images/footer-lodyas.png") #282828;
+  background: url("../images/footer-lodyas.png") rgb(40, 40, 40);
   -moz-animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   -o-animation: fadeIn 2s;
   -ms-animation: fadeIn 2s;
   animation: fadeIn 2s;
-  font-size: 16px; }
-  body .group:after {
-    content: "";
-    display: table;
-    clear: both; }
-  body header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 5vh;
-    background: white; }
-    body header h1 {
-      font-size: 6vh;
-      font-family: "Raleway", sans-serif;
-      text-transform: uppercase; }
-      body header h1 span.job-title {
-        font-weight: 200;
-        display: block; }
-        @media (min-width: 900px) {
-          body header h1 span.job-title {
-            display: inline; }
-            body header h1 span.job-title:before {
-              content: " | "; } }
-    body header aside.external-links-wrapper ul.external-links-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: space-between; }
-      body header aside.external-links-wrapper ul.external-links-list li {
-        padding: 0 15px; }
-        body header aside.external-links-wrapper ul.external-links-list li:first-of-type {
-          padding-left: 0; }
-        body header aside.external-links-wrapper ul.external-links-list li:last-of-type {
-          padding-right: 0; }
-        body header aside.external-links-wrapper ul.external-links-list li a {
-          display: block;
-          height: 8vh;
-          width: 8vh; }
-          body header aside.external-links-wrapper ul.external-links-list li a svg {
-            height: 100%;
-            width: 100%;
-            transition: transform .5s; }
-            body header aside.external-links-wrapper ul.external-links-list li a svg:hover {
-              border-radius: 100%;
-              fill: white;
-              transform: rotate(25deg); }
-        body header aside.external-links-wrapper ul.external-links-list li.external-link-github svg {
-          fill: black; }
-          body header aside.external-links-wrapper ul.external-links-list li.external-link-github svg:hover {
-            background: black; }
-        body header aside.external-links-wrapper ul.external-links-list li.external-link-linkedin svg {
-          fill: #1a7ad3; }
-          body header aside.external-links-wrapper ul.external-links-list li.external-link-linkedin svg:hover {
-            background: #1a7ad3; }
-        body header aside.external-links-wrapper ul.external-links-list li.external-link-email svg {
-          fill: red; }
-          body header aside.external-links-wrapper ul.external-links-list li.external-link-email svg:hover {
-            background: red; }
-  body nav {
-    width: 100%;
-    border-top: 2px black solid; }
-    body nav ul.nav-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-      @media (min-width: 600px) {
-        body nav ul.nav-list {
-          flex-wrap: nowrap; } }
-      body nav ul.nav-list li {
-        color: #ccc;
-        margin: 0 40px;
-        padding: 15px;
-        transition: color .5s;
-        font-size: 1.2em;
-        width: 100%; }
-        @media (min-width: 600px) {
-          body nav ul.nav-list li {
-            width: auto; } }
-        body nav ul.nav-list li.selected {
-          color: white;
-          border-bottom: 2px solid white; }
-        body nav ul.nav-list li:hover {
-          cursor: pointer;
-          color: white; }
-  body main {
-    padding: 30px; }
-    body main section.content {
-      background: rgba(81, 81, 81, 0.7);
-      color: #eee;
-      transition: opacity 0.5s;
-      overflow: hidden;
-      padding: 0px;
-      border: none;
-      max-height: 0;
-      opacity: 0; }
-      body main section.content.selected {
-        border: 5px rgba(38, 38, 38, 0.7) solid;
-        padding: 20px;
-        font-family: "Noto Sans", sans-serif;
-        max-height: 9999px;
-        opacity: 1; }
-      body main section.content a {
-        color: tan;
-        text-decoration: none; }
-        body main section.content a:hover {
-          text-decoration: underline; }
-      body main section.content#about {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        box-sizing: border-box; }
-        @media (min-width: 600px) {
-          body main section.content#about {
-            flex-wrap: nowrap; } }
-        body main section.content#about #headshot {
-          width: 80%;
-          height: auto;
-          margin: auto;
-          border-radius: 200px;
-          border: 2px #ccc solid;
-          box-shadow: 0 0 50px rgba(38, 38, 38, 0.7); }
-          @media (min-width: 600px) {
-            body main section.content#about #headshot {
-              width: 20%;
-              min-width: 150px;
-              height: auto;
-              margin: 10px 40px; } }
-        body main section.content#about li.punch {
-          list-style-image: url("../images/punch-bullet.png"); }
-      body main section.content#projects {
-        text-align: center; }
-        body main section.content#projects img {
-          width: 80%;
-          border: 2px #ccc solid;
-          margin: 30px; }
-        body main section.content#projects .project .separator {
-          color: #ccc; }
-        body main section.content#projects .project .project-github, body main section.content#projects .project .project-link {
-          display: inline-block; }
-          body main section.content#projects .project .project-github svg, body main section.content#projects .project .project-link svg {
-            fill: #ccc; }
-          body main section.content#projects .project .project-github:hover svg, body main section.content#projects .project .project-link:hover svg {
-            fill: #fff; }
-        body main section.content#projects .project .project-github {
-          height: 24px;
-          width: 24px;
-          vertical-align: bottom; }
-        body main section.content#projects .project .project-link {
-          height: 18px;
-          width: 18px; }
-        body main section.content#projects .project .description {
-          font-style: italic; }
-      body main section.content#resume .pdfobject-container {
-        height: 1180px; }
-      body main section.content.hidden {
-        display: none; }
-  body footer {
-    color: #ccc;
-    text-align: center;
-    font-size: smaller;
-    margin-bottom: 15px;
-    padding: 0 25px; }
+  font-size: 16px;
+}
+body .group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5vh;
+  background: white;
+}
+body header h1 {
+  font-size: 6vh;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+body header h1 span.job-title {
+  font-weight: 200;
+  display: block;
+}
+@media (min-width: 900px) {
+  body header h1 span.job-title {
+    display: inline;
+  }
+  body header h1 span.job-title:before {
+    content: " | ";
+  }
+}
+body header aside.external-links-wrapper ul.external-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+body header aside.external-links-wrapper ul.external-links-list li {
+  padding: 0 15px;
+}
+body header aside.external-links-wrapper ul.external-links-list li:first-of-type {
+  padding-left: 0;
+}
+body header aside.external-links-wrapper ul.external-links-list li:last-of-type {
+  padding-right: 0;
+}
+body header aside.external-links-wrapper ul.external-links-list li a {
+  display: block;
+  height: 8vh;
+  width: 8vh;
+}
+body header aside.external-links-wrapper ul.external-links-list li a svg {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s;
+}
+body header aside.external-links-wrapper ul.external-links-list li a svg:hover {
+  border-radius: 100%;
+  fill: white;
+  transform: rotate(25deg);
+}
+body header aside.external-links-wrapper ul.external-links-list li.external-link-github svg {
+  fill: rgb(0, 0, 0);
+}
+body header aside.external-links-wrapper ul.external-links-list li.external-link-github svg:hover {
+  background: rgb(0, 0, 0);
+}
+body header aside.external-links-wrapper ul.external-links-list li.external-link-linkedin svg {
+  fill: rgb(26, 122, 211);
+}
+body header aside.external-links-wrapper ul.external-links-list li.external-link-linkedin svg:hover {
+  background: rgb(26, 122, 211);
+}
+body header aside.external-links-wrapper ul.external-links-list li.external-link-email svg {
+  fill: red;
+}
+body header aside.external-links-wrapper ul.external-links-list li.external-link-email svg:hover {
+  background: red;
+}
+body nav {
+  width: 100%;
+  border-top: 2px black solid;
+}
+body nav ul.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 600px) {
+  body nav ul.nav-list {
+    flex-wrap: nowrap;
+  }
+}
+body nav ul.nav-list li {
+  color: #ccc;
+  margin: 0 40px;
+  padding: 15px;
+  transition: color 0.5s;
+  font-size: 1.2em;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  body nav ul.nav-list li {
+    width: auto;
+  }
+}
+body nav ul.nav-list li.selected {
+  color: white;
+  border-bottom: 2px solid white;
+}
+body nav ul.nav-list li:hover {
+  cursor: pointer;
+  color: white;
+}
+body main {
+  padding: 30px;
+}
+body main section.content {
+  background: rgba(81, 81, 81, 0.7);
+  color: #eee;
+  transition: opacity 0.5s;
+  overflow: hidden;
+  padding: 0px;
+  border: none;
+  max-height: 0;
+  opacity: 0;
+}
+body main section.content.selected {
+  border: 5px rgba(38, 38, 38, 0.7) solid;
+  padding: 20px;
+  font-family: "Noto Sans", sans-serif;
+  max-height: 9999px;
+  opacity: 1;
+}
+body main section.content a {
+  color: tan;
+  text-decoration: none;
+}
+body main section.content a:hover {
+  text-decoration: underline;
+}
+body main section.content#about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (min-width: 600px) {
+  body main section.content#about {
+    flex-wrap: nowrap;
+  }
+}
+body main section.content#about #headshot {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  border-radius: 200px;
+  border: 2px #ccc solid;
+  box-shadow: 0 0 50px rgba(38, 38, 38, 0.7);
+}
+@media (min-width: 600px) {
+  body main section.content#about #headshot {
+    width: 20%;
+    min-width: 150px;
+    height: auto;
+    margin: 10px 40px;
+  }
+}
+body main section.content#about li.punch {
+  list-style-image: url("../images/punch-bullet.png");
+}
+body main section.content#resume .pdfobject-container {
+  height: 1180px;
+}
+body main section.content.hidden {
+  display: none;
+}
+body footer {
+  color: #ccc;
+  text-align: center;
+  font-size: smaller;
+  margin-bottom: 15px;
+  padding: 0 25px;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */

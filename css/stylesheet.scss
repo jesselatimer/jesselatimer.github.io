@@ -4,8 +4,6 @@
 @import 'mixins';
 @import 'animations';
 
-/* TODO: Be sure to add prefixes. */
-
 /* Document Variables */
 $background: url("../images/footer-lodyas.png") rgb(40,40,40);
 $header-background: white;
@@ -196,42 +194,6 @@ body {
 
         li.punch {
           list-style-image: url("../images/punch-bullet.png");
-        }
-      }
-
-      &#projects {
-        text-align: center;
-
-        img {
-          width: 80%;
-          border: 2px #ccc solid;
-          margin: 30px;
-        }
-        .project {
-          .separator {
-            color: #ccc;
-          }
-
-          .project-github, .project-link {
-            display: inline-block;
-            svg { fill: #ccc; }
-            &:hover svg { fill: #fff; }
-          }
-
-          .project-github {
-            height: 24px;
-            width: 24px;
-            vertical-align: bottom;
-          }
-
-          .project-link {
-            height: 18px;
-            width: 18px;
-          }
-
-          .description {
-            font-style: italic;
-          }
         }
       }
 
