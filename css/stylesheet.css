@@ -674,9 +674,6 @@ body main section.content#about #headshot {
 body main section.content#about li.punch {
   list-style-image: url("../images/punch-bullet.png");
 }
-body main section.content#resume .pdfobject-container {
-  height: 1180px;
-}
 body main section.content.hidden {
   display: none;
 }

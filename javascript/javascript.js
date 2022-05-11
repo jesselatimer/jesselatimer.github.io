@@ -1,7 +1,4 @@
 (function() {
-  // TODO: update resume
-  // PDFObject.embed("pdf/jesse-latimer-resume.pdf", document.getElementById('resume-embed'));
-
   var about = document.getElementById('about');
   var aboutNav = document.getElementById('nav-about');
   var resume = document.getElementById('resume');
